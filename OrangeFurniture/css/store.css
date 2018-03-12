@@ -1,0 +1,99 @@
+.banner {
+  width: 100%;
+  position: relative;
+}
+.banner .txt {
+  position: absolute;
+  left: 15%;
+  top: 45%;
+  color: #ffffff;
+}
+.banner .txt h2 {
+  font-size: 32px;
+  margin-bottom: 4%;
+}
+.banner .txt p {
+  font-size: 20px;
+}
+.store {
+  width: 970px;
+  margin: auto;
+}
+.store .top .top-item {
+  padding: 10px;
+  width: 50%;
+  box-sizing: border-box;
+}
+.store .top .top-item .top-title {
+  border-bottom: 1px solid #eb6000;
+  line-height: 4em;
+}
+.store .top .top-item .top-content {
+  margin-top: 20px;
+  color: #999999;
+}
+.store .top .top-item .top-content.search .input-group {
+  margin-top: 10px;
+}
+.store .top .top-item .top-content.search .input-group .select-input {
+  width: 49%;
+}
+.store .top .top-item .top-content.search .input-group .select-input input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #999999;
+  padding: 5px 10px;
+  height: 40px;
+  transition: .2s;
+}
+.store .top .top-item .top-content.search .input-group .select-input input:hover,
+.store .top .top-item .top-content.search .input-group .select-input input:focus {
+  border: 1px solid #eb6000;
+  outline: none;
+}
+.store .top .top-item .top-content.search .input-group .select-input input:focus {
+  box-shadow: 0 0 2px #eb6000;
+}
+.store .top .top-item .top-content.address p {
+  margin-bottom: 2em;
+}
+.store .top .top-item .top-content.address p span {
+  margin-right: 1em;
+}
+.store .address .address-list .address-item {
+  width: 30%;
+  float: left;
+  box-sizing: border-box;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  padding: 25px 20px ;
+  background: #f5f5f5;
+  color: #262626;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: .2s;
+}
+.store .address .address-list .address-item:nth-child(3n) {
+  margin-right: 0;
+}
+.store .address .address-list .address-item h3 {
+  font-size: 16px;
+  margin-bottom: 1em;
+}
+.store .address .address-list .address-item .line {
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #eb6000;
+  transition: .2s;
+}
+.store .address .address-list .address-item:hover {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+  transform: translate(-2px, -2px);
+}
+.store .address .address-list .address-item:hover .line {
+  width: 100%;
+}
+.store .address .address-list .address-item p {
+  margin-top: 1em;
+}

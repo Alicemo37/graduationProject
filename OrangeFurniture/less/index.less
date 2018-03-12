@@ -1,0 +1,99 @@
+@import "config";
+
+
+.main{
+  width: 970px;
+  min-height: 1500px;
+  margin: auto;
+  overflow: hidden;
+  .carousel{
+    width: 100%;
+    .carousel-list{
+      width: 100%;
+      overflow: hidden;
+      .carousel-item{
+        width: 100%;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .category{
+    width: 100%;
+    margin-top: 50px;
+    .category-list{
+      width: 100%;
+      .category-item{
+        position: relative;
+        margin-bottom: 50px;
+        .title{
+          position: relative;
+          width: 84px;
+          height: 84px;
+          margin-left: 5px;
+          overflow: hidden;
+          transition: all .2s;
+          box-sizing: border-box;
+          outline: 2px solid transparent;
+          img{
+            width: 100%;
+          }
+          .mask{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            padding: .3em 0;
+            background: @color_A;
+            text-align: center;
+            opacity: 0;
+            transition: opacity .2s;
+            a{
+              color: @color_I;
+            }
+          }
+          &:hover{
+            outline: 2px solid @color_A;
+            .mask{
+              opacity: 1;
+            }
+          }
+        }
+        .content{
+          margin-left: 56px;
+          width: 825px ;
+          .content-list{
+            .content-item{
+              width: 125px;
+              margin-right: 15px;
+              margin-bottom: 20px;
+              position: relative;
+              &:nth-child(6n){
+                margin-right: 0;
+              }
+              .mask{
+                color: @color_I;
+                text-align: center;
+                line-height: 84px;
+                font-size: 18px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: block;
+                background: fade(@color_A, 50%);
+                opacity: 0;
+                transition: .2s;
+                &:hover{
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

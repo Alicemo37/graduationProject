@@ -1,0 +1,147 @@
+.list .menu-wrapper {
+  width: 100%;
+  background: #f5f5f5;
+}
+.list .menu-wrapper .menus {
+  overflow: auto;
+  width: 970px;
+  margin: auto;
+  padding: 40px 0 20px;
+}
+.list .menu-wrapper .menus .menu {
+  width: 20%;
+  margin-left: 5%;
+  box-sizing: border-box;
+  border-left: 1px solid #999999;
+  float: left;
+  color: #666666;
+}
+.list .menu-wrapper .menus .menu .menu-title {
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 16px;
+}
+.list .menu-wrapper .menus .menu .menu-list {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.list .menu-wrapper .menus .menu .menu-list .menu-item {
+  margin-bottom: 8px;
+}
+.list .menu-wrapper .menus .menu .menu-list .menu-item span {
+  display: inline-block;
+  line-height: 25px;
+  padding: 0 8px;
+  border-radius: 4px;
+  transition: all .2s ease;
+}
+.list .menu-wrapper .menus .menu .menu-list .menu-item:hover span {
+  background: #eb6000;
+  color: #ffffff;
+  margin-left: 2px;
+  padding: 0 10px;
+  letter-spacing: 3px;
+}
+.list .good-wrapper {
+  min-height: 1500px;
+  width: 970px;
+  margin: 20px auto 0;
+  overflow: hidden;
+}
+.list .good-wrapper .goods .good {
+  margin-bottom: 10px;
+}
+.list .good-wrapper .goods .good .item {
+  display: block;
+  background: #f5883d;
+  width: 960px;
+  margin: auto;
+  height: 375px;
+  overflow: hidden;
+  position: relative;
+  transition: .4s;
+}
+.list .good-wrapper .goods .good .item .img {
+  width: 500px;
+  height: 375px;
+  margin: 0;
+}
+.list .good-wrapper .goods .good .item .intro {
+  position: absolute;
+  left: 550px;
+  height: 80%;
+  top: 8%;
+}
+.list .good-wrapper .goods .good .item .intro .name-ch {
+  font: 30px/1.1 "futura_lightregular", "times new roman", "microsoft yahei";
+  text-transform: uppercase;
+}
+.list .good-wrapper .goods .good .item .intro .line {
+  margin: 10px 0;
+  background-color: #060606;
+  height: 1px;
+  width: 20px;
+  display: block;
+  transition: 0.4s;
+}
+.list .good-wrapper .goods .good .item .intro .name-en {
+  font-size: 16px;
+}
+.list .good-wrapper .goods .good .item .intro .desc {
+  font-size: 13px;
+  max-height: 140px;
+  width: 90%;
+  line-height: 1.5em;
+  overflow: hidden;
+  margin-top: 1em;
+}
+.list .good-wrapper .goods .good .item .border {
+  background: #993e00;
+  position: absolute;
+  display: block;
+  transition: 0.4s 0.2s;
+}
+.list .good-wrapper .goods .good .item .border.left {
+  width: 1px;
+  height: 0;
+  left: 1%;
+  bottom: 2%;
+}
+.list .good-wrapper .goods .good .item .border.right {
+  width: 1px;
+  height: 0%;
+  right: 1%;
+  top: 2%;
+}
+.list .good-wrapper .goods .good .item .border.top {
+  width: 0%;
+  height: 1px;
+  left: 1%;
+  top: 2%;
+}
+.list .good-wrapper .goods .good .item .border.bottom {
+  width: 0%;
+  height: 1px;
+  right: 1%;
+  bottom: 2%;
+}
+.list .good-wrapper .goods .good .item:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.list .good-wrapper .goods .good .item:hover .border.left {
+  height: 96%;
+}
+.list .good-wrapper .goods .good .item:hover .border.top {
+  width: 98%;
+}
+.list .good-wrapper .goods .good .item:hover .border.right {
+  height: 96%;
+}
+.list .good-wrapper .goods .good .item:hover .border.bottom {
+  width: 98%;
+}
+.list .good-wrapper .goods .good .item:hover .intro .line {
+  width: 150px;
+  background: #993e00;
+}

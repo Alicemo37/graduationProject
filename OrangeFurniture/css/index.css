@@ -1,0 +1,94 @@
+.main {
+  width: 970px;
+  min-height: 1500px;
+  margin: auto;
+  overflow: hidden;
+}
+.main .carousel {
+  width: 100%;
+}
+.main .carousel .carousel-list {
+  width: 100%;
+  overflow: hidden;
+}
+.main .carousel .carousel-list .carousel-item {
+  width: 100%;
+}
+.main .carousel .carousel-list .carousel-item img {
+  width: 100%;
+}
+.main .category {
+  width: 100%;
+  margin-top: 50px;
+}
+.main .category .category-list {
+  width: 100%;
+}
+.main .category .category-list .category-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+.main .category .category-list .category-item .title {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  margin-left: 5px;
+  overflow: hidden;
+  transition: all .2s;
+  box-sizing: border-box;
+  outline: 2px solid transparent;
+}
+.main .category .category-list .category-item .title img {
+  width: 100%;
+}
+.main .category .category-list .category-item .title .mask {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: .3em 0;
+  background: #eb6000;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.main .category .category-list .category-item .title .mask a {
+  color: #ffffff;
+}
+.main .category .category-list .category-item .title:hover {
+  outline: 2px solid #eb6000;
+}
+.main .category .category-list .category-item .title:hover .mask {
+  opacity: 1;
+}
+.main .category .category-list .category-item .content {
+  margin-left: 56px;
+  width: 825px ;
+}
+.main .category .category-list .category-item .content .content-list .content-item {
+  width: 125px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.main .category .category-list .category-item .content .content-list .content-item:nth-child(6n) {
+  margin-right: 0;
+}
+.main .category .category-list .category-item .content .content-list .content-item .mask {
+  color: #ffffff;
+  text-align: center;
+  line-height: 84px;
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(235, 96, 0, 0.5);
+  opacity: 0;
+  transition: .2s;
+}
+.main .category .category-list .category-item .content .content-list .content-item .mask:hover {
+  opacity: 1;
+}

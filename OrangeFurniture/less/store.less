@@ -1,0 +1,109 @@
+@import "config";
+.banner{
+  width: 100%;
+  position: relative;
+  .txt{
+    position: absolute;
+    left: 15%;
+    top: 45%;
+    color: @color_I;
+    h2{
+      font-size: 32px;
+      margin-bottom: 4%;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+}
+.store{
+  width: 970px;
+  margin: auto;
+  .top{
+    .top-item{
+      padding: 10px;
+      width: 50%;
+      box-sizing: border-box;
+      .top-title{
+        border-bottom: 1px solid @color_A;
+        line-height: 4em;
+      }
+      .top-content{
+        margin-top: 20px;
+        color: @color_D;
+        &.search{
+          .input-group{
+            margin-top: 10px;
+            .select-input{
+              width: 49%;
+              input{
+                box-sizing: border-box;
+                width: 100%;
+                border: 1px solid @color_D;
+                padding: 5px 10px;
+                height: 40px;
+                transition: .2s;
+                &:hover ,&:focus
+                {
+                  border: 1px solid @color_A;
+                  outline: none;
+                }
+                &:focus{
+                  box-shadow: 0 0 2px @color_A;
+                }
+              }
+            }
+          }
+        }
+        &.address{
+          p{
+            margin-bottom: 2em;
+            span{margin-right: 1em}
+          }
+        }
+      }
+    }
+  }
+  .address{
+    .address-list{
+      .address-item{
+        width: 30%;
+        float: left;
+        box-sizing: border-box;
+        margin-right: 5%;
+        margin-bottom: 20px;
+        padding: 25px 20px ;
+        //border-bottom: 1px solid @color_A;
+        background: @color_F;
+        color: @color_B;
+        box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+        border-radius: 5px;
+        transition: .2s;
+        &:nth-child(3n){
+          margin-right: 0;
+        }
+        h3{
+          font-size: 16px;
+          margin-bottom: 1em;
+        }
+        .line{
+          display: block;
+          width: 0;
+          height: 1px;
+          background: @color_A;
+          transition: .2s;
+        }
+        &:hover{
+          box-shadow: 3px 3px 3px rgba(0,0,0,.4);
+          transform: translate(-2px, -2px);
+          .line{
+            width: 100%;
+          }
+        }
+        p{
+          margin-top: 1em;
+        }
+      }
+    }
+  }
+}

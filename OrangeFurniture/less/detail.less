@@ -1,0 +1,103 @@
+@import "config";
+.banner{
+  width: 100%;
+  background: @color_F;
+  padding: 72px 0;
+  .img{
+    width: 660px;
+    margin: auto;
+  }
+  .info{
+    margin-top: 48px;
+    color: @color_B;
+    text-align: center;
+    .title{
+      font-weight: 300;
+      font-style: normal;
+      line-height: 1.5em;
+      font-size: 40px;
+      font-family: 'SimSun', 'Songti SC', 'Songti';
+    }
+    .price{
+      font-size: 30px;
+      font-weight: 300;
+      font-style: normal;
+      margin: 12px auto 24px;
+    }
+    .meta{
+      font-size: 14px;
+      .meta-item{
+        margin: 0 8px 16px;
+        strong{
+
+        }
+        span{
+          color: @color_D;
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+}
+.detail{
+  width: 970px;
+  margin: auto;
+  .nav{
+    margin-top: 48px;
+    .tabs{
+      width: 200px;
+      margin: auto;
+      text-align: center;
+      color: @color_B;
+      font-size: 16px;
+      .tab{
+        width:100px ;
+        padding-top: 20px;
+        float: left;
+        &.active{
+          a{
+            color: @color_A;
+            border-bottom: 2px solid @color_A;
+          }
+        }
+        a{
+          display: block;
+          height: 36px;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+  .tab-content{
+    border-bottom: 1px solid @color_A;
+    border-top: 1px solid @color_A;
+    padding: 50px 0;
+    //position: relative;
+    .tab-pane{
+      //opacity: 0;
+      display: none;
+      //position: absolute;
+      //left: 0;
+      //bottom: 0;
+      transition: .2s;
+      &:target{
+        display: block;
+        //opacity: 1;
+      }
+    }
+    .table{
+      width: 100%;
+      font-size: 24px;
+      th{
+        color: @color_C;
+        text-align: left;
+        padding: 15px;
+      }
+      td{
+        color: @color_D;
+        text-align: center;
+        padding: 15px;
+      }
+    }
+  }
+}
